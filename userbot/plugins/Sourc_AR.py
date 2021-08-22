@@ -22,7 +22,7 @@ async def amireallyalive(alive):
     if CAT_IMG:
         cat_caption = f"**{CUSTOM_ALIVE_TEXT}**\n"
         cat_caption += f"———×\n"
-        cat_caption += f"**{EMOJI} ❬ ٍَ أصدار النسخـة :  ِ5.0.0  ٍَ❭**\n"
+        cat_caption += f"**{EMOJI} ❬ ٍَ أصدار النسخـة :  ِ2.0.0  ٍَ❭**\n"
         cat_caption += f"**{EMOJI}❬ ٰمـدة الـتشغيل  : {uptime}  ٍَ❭**\n"
         cat_caption += f"**{EMOJI} ❬ ِحسـابك  :   {mention}  ٍ**\n"
         cat_caption += f"**{EMOJI} ❬ ٰقنـاة تليـثون  :** @M4_STORY  ٍَ❭\n"
@@ -37,7 +37,7 @@ async def amireallyalive(alive):
             alive,
         f"**{CUSTOM_ALIVE_TEXT}**\n"
         f"———×\n"
-        f"**{EMOJI} ❬ ٍَ أصدار النسخـة :  ِ5.0.0  ٍَ❭**\n"
+        f"**{EMOJI} ❬ ٍَ أصدار النسخـة :  ِ2.0.0  ٍَ❭**\n"
         f"**{EMOJI}❬ ٰمـدة الـتشغيل  : {uptime}  ٍَ❭**\n"
         f"**{EMOJI} ❬ ِحسـابك  :   {mention}  ٍ**\n"
         f"**{EMOJI} ❬ ٰقنـاة تليـثون  :** @M4_STORY  ٍَ❭\n"
