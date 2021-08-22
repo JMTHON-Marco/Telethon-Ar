@@ -6,9 +6,9 @@ from telethon import version
 from . import ALIVE_NAME, StartTime, catversion, get_readable_time, mention, reply_id
 
 DEFAULTUSER = ALIVE_NAME or "I𝐐𝐓𝐇𝐎𝐍⁦♡⁩"
-CAT_IMG = Config.ALIVE_PIC or "https://telegra.ph/file/8113946b13686a0bdcac6.jpg"
-CUSTOM_ALIVE_TEXT = Config.CUSTOM_ALIVE_TEXT or "⇝ ＴＥＬＥＴＨＯＮ ＡＲＡＢＳ ⇜"
-EMOJI = Config.CUSTOM_ALIVE_EMOJI or "𖠕"
+CAT_IMG = Config.ALIVE_PIC or "https://telegra.ph/file/cd27beb82e7af1aff97d2.mp4"
+CUSTOM_ALIVE_TEXT = Config.CUSTOM_ALIVE_TEXT or "❬ تـليثون العـرب الأجنبي  - Telethon-Arabe ، 🕸  ❭"
+EMOJI = Config.CUSTOM_ALIVE_EMOJI or " ٍَ 🖤"
 
 
 @bot.on(admin_cmd(outgoing=True, pattern="alive$"))
@@ -20,11 +20,14 @@ async def amireallyalive(alive):
     uptime = await get_readable_time((time.time() - StartTime))
     _, check_sgnirts = check_data_base_heal_th()
     if CAT_IMG:
-        cat_caption = f"**↲ الحاله  ↵ **⇲ `{check_sgnirts}`⇱\n"
-        cat_caption += f"**↲ اصدار النسخه ↵**⇲ `1.0.0⇱\n`"
-        cat_caption += f"**↲ مده التشغيل  ↵ **⇲ `{uptime}⇱\n`"
-        cat_caption += f"**↲ المستخدم ↵ **⇲ {mention}⇱\n"
-        cat_caption += f"**↲**  ⇲**[نسـخة عـربيـة]**(t.me/thonar) ⇱.\n\n"
+        cat_caption = f"**{CUSTOM_ALIVE_TEXT}**\n"
+        cat_caption += f"———×\n"
+        cat_caption += f"**{EMOJI} ❬ ٍَ أصدار النسخـة :  ِ5.0.0  ٍَ❭**\n"
+        cat_caption += f"**{EMOJI}❬ ٰمـدة الـتشغيل  : {uptime}  ٍَ❭**\n"
+        cat_caption += f"**{EMOJI} ❬ ِحسـابك  :   {mention}  ٍ**\n"
+        cat_caption += f"**{EMOJI} ❬ ٰقنـاة تليـثون  :** @M4_STORY  ٍَ❭\n"
+        cat_caption += f"**{EMOJI} ❬ ٰمـطور السورس : ** @LLL5L ٍَ❭\n"
+        cat_caption += f"———×"
         await alive.client.send_file(
             alive.chat_id, CAT_IMG, caption=cat_caption, reply_to=reply_to_id
         )
@@ -32,13 +35,15 @@ async def amireallyalive(alive):
     else:
         await edit_or_reply(
             alive,
-             f"**{CUSTOM_ALIVE_TEXT}**\n"
-        f"**{EMOJI} قاعدة البيانات 『** `1.0.0`』\n"
-        f"**{EMOJI} اصدار التليثون  『** `1.0.0`』\n`"
-        f"**{EMOJI} اصدار تليثون العرب 『** `1.0.0`』\n"
-        f"**{EMOJI} اصدار البايثون 『** `1.0.0`』\n`"
-        f"**{EMOJI} مدة التشغيل 『** `{uptime}』\n`"
-        f"**{EMOJI} المستخدم 『** {mention}』\n",
+        f"**{CUSTOM_ALIVE_TEXT}**\n"
+        f"———×\n"
+        f"**{EMOJI} ❬ ٍَ أصدار النسخـة :  ِ5.0.0  ٍَ❭**\n"
+        f"**{EMOJI}❬ ٰمـدة الـتشغيل  : {uptime}  ٍَ❭**\n"
+        f"**{EMOJI} ❬ ِحسـابك  :   {mention}  ٍ**\n"
+        f"**{EMOJI} ❬ ٰقنـاة تليـثون  :** @M4_STORY  ٍَ❭\n"
+        f"**{EMOJI} ❬ ٰمـطور السورس : ** @LLL5L ٍَ❭\n"
+        f"**{EMOJI} ❬ ٰمـطور السورس : ** @LLL5L ٍَ❭\n"
+        f"———×\n"
         )
 
 
