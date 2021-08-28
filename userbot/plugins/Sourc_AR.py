@@ -25,8 +25,8 @@ async def amireallyalive(alive):
         cat_caption += f"**{EMOJI} ❬ ٍَ أصدار النسخـة :  ِ2.0.0  ٍَ❭**\n"
         cat_caption += f"**{EMOJI}❬ ٰمـدة الـتشغيل  : {uptime}  ٍَ❭**\n"
         cat_caption += f"**{EMOJI} ❬ ِحسـابك  :   {mention}  ٍ**\n"
-        cat_caption += f"**{EMOJI} ❬ ٰقنـاة تليـثون  :** @M4_STORY  ٍَ❭\n"
-        cat_caption += f"**{EMOJI} ❬ ٰمـطور السورس : ** @LLL5L ٍَ❭\n"
+        cat_caption += f"**{EMOJI} ❬ ٰقنـاة تليـثون  :** @UUISQ  ٍَ❭\n"
+        cat_caption += f"**{EMOJI} ❬ ٰمـطور السورس : ** @H_L_5 ٍَ❭\n"
         cat_caption += f"———×"
         await alive.client.send_file(
             alive.chat_id, CAT_IMG, caption=cat_caption, reply_to=reply_to_id
@@ -40,9 +40,9 @@ async def amireallyalive(alive):
         f"**{EMOJI} ❬ ٍَ أصدار النسخـة :  ِ2.0.0  ٍَ❭**\n"
         f"**{EMOJI}❬ ٰمـدة الـتشغيل  : {uptime}  ٍَ❭**\n"
         f"**{EMOJI} ❬ ِحسـابك  :   {mention}  ٍ**\n"
-        f"**{EMOJI} ❬ ٰقنـاة تليـثون  :** @M4_STORY  ٍَ❭\n"
-        f"**{EMOJI} ❬ ٰمـطور السورس : ** @LLL5L ٍَ❭\n"
-        f"**{EMOJI} ❬ ٰمـطور السورس : ** @LLL5L ٍَ❭\n"
+        f"**{EMOJI} ❬ ٰقنـاة تليـثون  :** @UUISQ  ٍَ❭\n"
+        f"**{EMOJI} ❬ ٰمـطور السورس : ** @H_L_5 ٍَ❭\n"
+        f"**{EMOJI} ❬ ٰمـطور السورس : ** @H_L_5 ٍَ❭\n"
         f"———×\n"
         )
 
